@@ -1,0 +1,160 @@
+/* Define CSS variables for colors */
+:root {
+  --bs-blue: #007bff;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #28a745;
+  --bs-teal: #20c997;
+  --bs-cyan: #17a2b8;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f5f5f5;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #007bff;
+  --bs-secondary: #6c757d;
+  --bs-success: #28a745;
+  --bs-info: #17a2b8;
+  --bs-alert-bg: #b6effb;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+}
+
+/* Global styles */
+body {
+  background-color: #f0f8ff;
+}
+
+/* Card styles */
+.card {
+  margin: 5em 10em 5em;
+}
+
+.card .card-header {
+  height: 10em;
+  background-color: var(--bs-gray-100);
+}
+
+.card-header img {
+  width: 5em;
+  height: 3em;
+  border-radius: 0.5em;
+  opacity: 0.8;
+}
+
+/* Heading styles */
+h1 {
+  align-items: center;
+  color: MidnightBlue;
+  font-weight: bold;
+}
+
+h3 {
+  color: DarkSlateGray;
+}
+
+/* Table styles */
+.card .card-body th {
+  background-color: var(--bs-info);
+  color: var(--bs-white);
+  border: 1px solid var(--bs-gray-300);
+}
+
+table th,
+table td {
+  padding: .425em;
+  text-align: left;
+  font-size: small;
+  border: 1px solid var(--bs-gray-300);
+}
+
+tr:hover td {
+  background: transparent;
+  font-weight: bold;
+  background-color: var(--bs-info);
+}
+
+.disabled {
+  background-color: #f2f2f2;
+  color: #999;
+  pointer-events: none;
+}
+
+/* Input styles */
+.allocate-input .number {
+  height: 100;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid var(--bs-gray-300);
+}
+
+.currency {
+  color: var(--bs-danger);
+  position: 8px 12px;
+  background-color: var(--bs-info-bg);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.currency.money:focus,
+.currency.money:hover {
+  background-color: var(--bs-info-bg);
+  outline: none;
+  border: none;
+}
+
+/* Sweet Alert styles */
+.swal2-popup {
+  font-size: 0.6rem !important;
+}
+
+.swal2-styled {
+  padding: 10px 32px 10px 32px !important;
+  width: 60px;
+  height: 40px;
+}
+
+/* Select option styles */
+.select-option {
+  min-width: 13rem;
+  height: auto;
+  font-size: small;
+  border-radius: 0 0 0.25rem 0.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.select-option:hover {
+  outline: none;
+  color: #3E8DA8;
+}
+
+/* Button hover styles */
+.btn:hover {
+  background: linear-gradient(109.6deg, rgb(127, 205, 255) 31.3%, rgb(200, 248, 227) 100.2%);
+  color: var(--bs-white);
+}
+
+/* Animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
